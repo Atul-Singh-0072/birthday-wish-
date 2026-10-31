@@ -433,7 +433,7 @@
   }
   .memory:hover img { transform: scale(1.06); }
   .memory figcaption {
-    position: absolute; top: 12px; left: 12px; z-index: 2;
+    position: absolute; bottom: 12px; left: 12px; z-index: 2;   /* bottom corner: faces sit in the upper half */
     max-width: calc(100% - 24px);
     padding: 8px 14px 9px;
     border-radius: 14px;
@@ -441,13 +441,13 @@
     border: 1.5px solid rgba(255, 214, 140, .9);
     box-shadow: 0 10px 24px -10px rgba(70, 0, 30, .7);
     color: #fff;
-    transform: rotate(-2deg); transform-origin: left top;
+    transform: rotate(-2deg); transform-origin: left bottom;
   }
   .memory figcaption strong { display: block; font-family: var(--serif); font-weight: 600; font-size: clamp(1.15rem, 1.7vw, 1.45rem); line-height: 1.2; text-shadow: 0 1px 2px rgba(0,0,0,.25); }
   .memory figcaption small { display: block; font-size: .7rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: #ffd98a; }
   @media (max-width: 560px) {
     .memory { border-width: 3px; border-radius: 16px; }
-    .memory figcaption { top: 7px; left: 7px; max-width: calc(100% - 14px); padding: 4px 9px 5px; border-radius: 9px; }
+    .memory figcaption { bottom: 7px; left: 7px; max-width: calc(100% - 14px); padding: 4px 9px 5px; border-radius: 9px; }
     .memory figcaption strong { font-size: .92rem; }
     .memory figcaption small { display: none; }   /* keep the tag compact on phones */
   }
@@ -1063,7 +1063,7 @@
         <div class="mem-wrap reveal">
           <figure class="memory glare" data-tilt="10" tabindex="0">
             <img src="photos/memory-7.jpg" width="896" height="1200" alt="Saumya in a denim dress by the lake, playfully hiding from the camera" loading="lazy" decoding="async">
-            <figcaption><small>Denim Days</small><strong>Camera shy, still iconic</strong></figcaption>
+            <figcaption><small>Denim Days</small><strong>Shy, still iconic</strong></figcaption>
           </figure>
         </div>
 
