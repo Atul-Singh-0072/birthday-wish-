@@ -1,0 +1,8 @@
+# Personal media stays off GitHub (the live site has its own copies)
+/photos/
+/music/
+/og-image.jpg
+
+# Cloudflare Wrangler local state
+.wrangler/
+node_modules/
